@@ -187,5 +187,7 @@ include_directories(
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
 
-add_executable(automove src/automove.cpp)
-target_link_libraries(automove ${catkin_LIBRARIES})
+set(SOURCES src/automove.cpp include/automove.h)
+
+add_executable(automap_node src/automap_node.cpp ${SOURCES})
+target_link_libraries(automap_node ${catkin_LIBRARIES} )

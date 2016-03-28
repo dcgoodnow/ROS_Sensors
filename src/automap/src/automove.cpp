@@ -6,10 +6,10 @@ automove::automove()
 	keepMoving = true;
 
 	// Advertise a new publisher for the simulated robot's velocity command topic
-	commandPub = node.advertise<geometry_msgs::Twist>("cmd_vel", 10);
+	commandPub = node.advertise<geometry_msgs::Twist>("create/cmd_vel", 10);
 
 	// Subscribe to the simulated robot's laser scan topic
-	laserSub = node.subscribe("scan", 1, &automove::scanCallback, this);
+	laserSub = node.subscribe("create/scan", 1, &automove::scanCallback, this);
 }
 
 // Send a velocity command

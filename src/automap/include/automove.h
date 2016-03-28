@@ -5,7 +5,7 @@ class automove
 {
 public:
 	// Tunable parameters
-	constexpr static double FORWARD_SPEED_MPS = 0.5;
+	constexpr static double FORWARD_SPEED_MPS = 1.5;
 	constexpr static double BACKWARD_SPEED_MPS = -0.5;
 	constexpr static double MIN_SCAN_ANGLE_RAD = -30.0/180*M_PI;
 	constexpr static double MAX_SCAN_ANGLE_RAD = 30.0/180*M_PI;
